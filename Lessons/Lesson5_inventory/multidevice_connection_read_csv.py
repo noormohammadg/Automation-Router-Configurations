@@ -1,15 +1,13 @@
-import netmiko
+import csv
 
+try:
+    # Read csv file
+    with open('./Inventory/host.csv', "r") as f:
+        reader = csv.DictReader(f)
+        devices = list(reader)
 
-device = {
-    'device_type': 'cisco_ios',
-    'ip': '172.16.31.10',
-    'username': 'admin',
-    'password': 'admin',
-    'secret':'admin'
-}
-
-
-with netmiko.Netmiko(**device) as ssh:
-
-sdlfklsdk
+    print(f"Total number of devices : {len(devices)}\n")
+    for device in devices:
+        print(f"host {device['host']}\n")
+except Exception as e:
+    print(e)

@@ -1,0 +1,105 @@
+
+
+
+
+
+# Below commands for to identify which user has edit code
+  * set user name  = git config --global user.name Noor
+  * set user email = git config --global user.email noor@gmail.com
+  Verify username and email
+  * git config --global user.email
+  * git conifg --global user.name
+
+# init ==> it will create new git repository
+  open git bash in folder and run below command
+  *git init
+
+# status ==> it will say if there is any untracked files
+  *git status
+
+# if there is any untracked files push to staging area
+   below command push all file untracked files
+  *git add --all
+
+# Commint all files
+  *git commint
+
+(Issue    : while first commit it will take to vim editor
+ solution : type i, type esc, type :wq
+ solution : git commit -m"configuration added by noor"
+) 
+
+# If you want create a file use below command
+  *touch filename
+
+# If configuration change cause network outage, you can rollback previous config immedietly
+  Below command will checkout all edited files
+  *git checkout -f
+
+# The below command tells what commits have you done
+  *git log
+
+# The below command tells what commits have you done and what changes you did,
+  it will filter if there are 100 you can filter by below command
+  *git log -p -1
+
+# git diff ==> it will compare working directory with staging area
+  example : if you edit any file, after running below command it will show what edit you have done.
+  *git diff
+
+# Remove files
+  *git rm filename
+
+# git ignore ==> if you dont want to commit log files, only track important files.
+  *touch .gitignore  - creat ignore file
+   whichever files want to ignor just mention in this file
+
+
+# Braches ==> If you are working on a critical project which is on production,
+              now you want to make some changes, you dont work on production code,
+              insted of that we create branch, means we create a copy of master branch.
+    
+   *git branch feature1(branch Name)
+   *git checkout feature1 --> switch master to feature1
+   *git checkout master  ---> return to master
+
+If feature1 code is good then you can merge into master branch
+   *git merge feature1
+
+
+#########################################################
+
+GITHUB
+It is a hosting service.
+Whatever we created reporsitories we can host on it.
+
+=============
+How host local repository in github
+1.Connect local repo with remote repo with url
+ *git remote add origin https://github.com/noormohammadg/Automation-Router-Configurations.git
+
+2.From where you can fetch and push
+ *git remote -v
+
+3.Push my master branch in origin
+ *git push origin master
+
+(Issue while doing this, it will say the origin repo not foud
+ solution : go to settings in github, SSH and GPG keys
+ run the below to generate ssh key
+  
+  * ssh-keygen -t rsa -b 4096 -C "noor@gmail.com"
+  *eval $(ssh-agent -s)
+  *ssh-add ~/.ssh/id_rsa
+  *cat ~/.ssh/id_rsa.pub
+)
+
+
+
+
+
+
+
+
+
+
