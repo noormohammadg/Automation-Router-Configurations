@@ -8,3 +8,6 @@ device = {
     'password': 'admin',
     'secret':'admin'
 }
+
+
+with netmiko.Netmiko(**device) as ssh:
