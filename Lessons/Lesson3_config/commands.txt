@@ -1,0 +1,10 @@
+interface fa2/0
+ description LAN
+ ip address 192.168.2.1 255.255.255.0
+ no shutdown
+!
+ip route 0.0.0.0 0.0.0.0 192.168.2.2
+!
+do show ip interface brief
+!
+do show ip route

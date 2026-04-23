@@ -1,0 +1,15 @@
+1.Install python
+2.Install Libraries
+  paramiko - SSH library
+  textfsm - Prase CLI output into structured data
+  pyyaml  - read yaml config files
+  pandas - data manipulation
+  openpyxl - Excel supprot
+3.Install GNS3 
+4.Access device
+   a.Configure ssh on router
+
+
+
+Project loaction D:/AutomationProject
+

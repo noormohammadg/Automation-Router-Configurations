@@ -1,0 +1,54 @@
+1.Lesson1 : Connection to router and see the prompt(user mode or prvilaged mode or global configuraion mode)
+            
+2.Lesson2 : In this lesson we use just show commands and get result
+            #send_command()- The primary method for show commands
+            #Capturing output and printing output
+            #sending multiple commands  
+            #saving output to file
+
+3.Lesson3 : In this lesson we send configuration to the router
+            #send_config_set()       - send config commands
+            #send_config_from_file() - load config from a file
+            #Entering and exiting config mode automatically
+            #Saving confi with save_config()
+            #verifying changes after applying
+            #'read_timeout':30  - use when device slow/large output
+           
+4.Lesson4 : In this lesson we loop over multiple devices (This where automation becomes truly powerful. The same
+            script that works on 3 devices works on 300 devices.)
+            #Loop over multiple devices with show & config commands
+            #We can Handle failures per device without stopping the whole script
+            #We can save output per device serpately
+         Golden rule for Multi-Device Automation
+         1.Always wrap each device in its own try/except block
+            one failure should not stop the whole script
+         2.Always print which device connecting to
+            make debugging easy
+         3.Always save output per device seprately
+            Easy to trace back result
+         4.Always print summary at end
+            to know what succeeded and what failed
+         5.Always test script on one devic first, then scale to many
+
+5.Lesson5 : Reading Inventory from YAML & CSV Files
+           #Why external files are better than hardcoding
+             because, passwords visible in code, hard to scale 100 of device
+           #Read devices from a YAML file or CSV s
+           #Group devices by sites/role
+           #Combine inventory with Netmiko loops
+       YAML v/s CSV
+       #YAML human-readable
+       #YAML supports nested data(groups, tags)
+       #Not open in excel
+       #YAML best for complex inventories
+
+       #CSV Readable
+       #CSV dont support nested data(flat only)
+       #Open in excel
+       #CSV best for simple device lists
+
+  #Use YAML structured/grouped inventories
+  #Use CSV when your team manages device in Excel
+
+
+
