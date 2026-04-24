@@ -1,3 +1,4 @@
-"name,host,devic_type,username,password,secret,"
-"R1,192.168.253.5,cisco_ios,admin,admin,admin"
-"R2,192.168.253.6,cisco_ios,noor,noor123,noor123"
+host,device_type,username,password,secret
+192.168.253.5,cisco_ios,admin,admin,admin
+192.168.253.6,cisco_ios,noor,noor123,noor123
+192.168.253.7,cisco_ios,noor1,noor@123,noor@123
