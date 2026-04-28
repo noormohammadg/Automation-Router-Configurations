@@ -50,5 +50,20 @@
   #Use YAML structured/grouped inventories
   #Use CSV when your team manages device in Excel
 
+6. Lesson6 : Parsing CLI output with TextFSM & NTC Templats
+   #Why raw CLI output is hard to work with
+     when we run command "send_command()" we get back a raw string, from that output
+     to get just IP address of any interface we have to split by space, split by lines.
+     That messy and break easily . TextFSM fixes this.
+   #What is TextFSM
+     TextFSM is python library that takes raw output and turn it into
+     interface ip status[gig0/0 1.1.1.1 up]
+   #What is NTC Templates?
+     writing TextFSM rules ourself is complex, NTC Templates is a free library that has
+     pre-written rules for hundreds of cisco/juniper/arista commands already done for us.
 
-
+7. Lesson7 : Config Backup Automation, we learn
+     #Why config backup are critical in networking
+     #Backup a single device's running config
+     #Backup multiple devices from CSV inventory
+     #Compare old backup vs new backup and detect changes.
