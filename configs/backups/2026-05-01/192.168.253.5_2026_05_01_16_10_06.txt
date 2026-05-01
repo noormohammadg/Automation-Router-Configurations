@@ -1,0 +1,102 @@
+Backup of Device : 192.168.253.5
+Date & Time      : 2026_05_01_16_10_06
+________________________________________________________________________________________________________________________Building configuration...
+
+Current configuration : 1166 bytes
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging buffered 10000
+enable secret 5 $1$mIPT$pQAgt5vGaYg/H.RVDrUVe0
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name lab.local
+no ipv6 cef
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+username admin secret 5 $1$iIqh$ePK9vmR/sN78EYDZGiZm50
+!
+!
+ip tcp synwait-time 5
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 192.168.253.5 255.255.255.0
+ duplex full
+!
+interface FastEthernet1/0
+ description LAN
+ ip address 192.168.1.1 255.255.255.0
+ duplex full
+!
+interface FastEthernet2/0
+ description LAN
+ ip address 192.168.2.1 255.255.255.0
+ duplex full
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 0.0.0.0 0.0.0.0 192.168.2.2
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+ntp server 8.8.8.8
+!
+end

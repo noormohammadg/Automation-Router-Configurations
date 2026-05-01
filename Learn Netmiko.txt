@@ -64,6 +64,8 @@
 
 7. Lesson7 : Config Backup Automation, we learn
      #Why config backup are critical in networking
+        Without Automation :Engineer manually SSH into every device one by one copies running config pastes it into notepad
+        With Automation : Python connect all devices automatically every night and save each file
      #Backup a single device's running config
      #Backup multiple devices from CSV inventory
-     #Compare old backup vs new backup and detect changes.
+     #Compare old backup vs new backup and detect changes using python library : difflib
