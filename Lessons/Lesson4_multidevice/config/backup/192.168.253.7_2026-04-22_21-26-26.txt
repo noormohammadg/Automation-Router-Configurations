@@ -1,9 +1,9 @@
 Command : show ip interface brief
 __________________________________________________
 Interface              IP-Address      OK? Method Status                Protocol
-FastEthernet0/0        192.168.253.7   YES NVRAM  up                    up      
-FastEthernet1/0        unassigned      YES NVRAM  administratively down down    
-FastEthernet2/0        unassigned      YES NVRAM  administratively down down    
+FastEthernet0/0        192.168.253.7   YES NVRAM  up                    up
+FastEthernet1/0        192.168.1.1     YES NVRAM  up                    down    
+FastEthernet2/0        192.168.2.1     YES NVRAM  up                    up      
 
 Command : show version
 __________________________________________________
@@ -15,7 +15,7 @@ Compiled Thu 20-Feb-14 06:51 by prod_rel_team
 ROM: ROMMON Emulation Microcode
 BOOTLDR: 7200 Software (C7200-ADVIPSERVICESK9-M), Version 15.2(4)S5, RELEASE SOFTWARE (fc1)
 
-R4 uptime is 9 minutes
+R1 uptime is 2 minutes
 System returned to ROM by unknown reload cause - suspect boot_data[BOOT_COUNT] 0x0, BOOT_COUNT 0, BOOTDATA 19
 System image file is "tftp://255.255.255.255/unknown"
 Last reload reason: unknown reload cause - suspect boot_data[BOOT_COUNT] 0x0, BOOT_COUNT 0, BOOTDATA 19
@@ -58,17 +58,20 @@ for c7200 bandwidth points oversubscription and usage guidelines.
 
 
 3 FastEthernet interfaces
-509K bytes of NVRAM.
+507K bytes of NVRAM.
 
 8192K bytes of Flash internal SIMM (Sector size 256K).
 Configuration register is 0x2102
 
 
-config Pushed__________________________________________________
+config Pushed
+__________________________________________________
 configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
-R4(config)#logging buffered 10000
-R4(config)#ntp server 8.8.8.8
-R4(config)#end
-R4#
+R1(config)#logging buffered 10000
+R1(config)#ntp server 8.8.8.8
+R1(config)#end
+R1#
+
+
 

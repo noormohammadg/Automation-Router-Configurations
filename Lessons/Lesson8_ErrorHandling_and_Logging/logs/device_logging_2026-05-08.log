@@ -1,0 +1,18 @@
+2026-05-08 19:30:46 INFO ==========================================================================================
+2026-05-08 19:30:46 INFO Scrip started
+2026-05-08 19:30:46 INFO Device  : 192.168.253.5
+2026-05-08 19:30:46 INFO Command count : 3
+2026-05-08 19:30:46 INFO ==========================================================================================
+2026-05-08 19:30:46 INFO Connecting to 192.168.253.5....
+2026-05-08 19:30:47 INFO Connected to 192.168.253.5
+2026-05-08 19:30:47 INFO Device prompt is : R1#
+2026-05-08 19:30:47 INFO sending command show version
+2026-05-08 19:30:47 INFO successfully sended : show version : command
+2026-05-08 19:30:47 INFO sending command show ip interface brief
+2026-05-08 19:30:47 INFO successfully sended : show ip interface brief : command
+2026-05-08 19:30:47 INFO sending command show ip route
+2026-05-08 19:30:47 INFO successfully sended : show ip route : command
+2026-05-08 19:30:47 INFO All commands completed
+2026-05-08 19:30:47 INFO Disconnected from device : 192.168.253.5
+2026-05-08 19:30:47 INFO Scrip completed
+2026-05-08 19:30:47 INFO log file save logs/device_logging_2026-05-08.log

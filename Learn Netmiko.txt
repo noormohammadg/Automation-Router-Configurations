@@ -69,3 +69,19 @@
      #Backup a single device's running config
      #Backup multiple devices from CSV inventory
      #Compare old backup vs new backup and detect changes using python library : difflib
+
+8. Lesson8 : Error Handling & Logging
+    # Why is logging and why its better than print()
+      print() = only shows on screen. No timestamps. No severity level. When script finish output gone.
+      logging = shows on screen and save to file. add timestamp. Each message has level(info, warning). Log file stays.
+    # logging is python built-in library
+    # log levels : Debug,info,warning,error,critical
+    # it will write logs to file and screen at same time
+
+    Log levels
+    level                When to use                              Example
+    Debbug         Detailed info for debugging              send command: show version
+    Info           Normal events                            connected  to 192.168.1.1
+    Warning        something unusal happend                 Device slow to respond
+    Error          something failed                         Auth failed for 192.168.1.1
+    Critical       Very serious failure                     Cannot open inventory file

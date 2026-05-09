@@ -25,3 +25,4 @@ Gateway of last resort is not set
 C        192.168.253.0/24 is directly connected, FastEthernet0/0
 L        192.168.253.6/32 is directly connected, FastEthernet0/0
 
+iam noor

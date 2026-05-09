@@ -1,0 +1,50 @@
+2026-05-09 17:39:35 INFO ============Script started==============
+2026-05-09 17:39:35 INFO logfile   : logs/full_logging_2026-05-09.log
+2026-05-09 17:39:35 INFO CSV file  : D:/Automaion Project/Inventory/host.csv
+2026-05-09 17:39:35 INFO Commands : 3
+2026-05-09 17:39:35 INFO Loading device from D:/Automaion Project/Inventory/host.csv
+2026-05-09 17:39:35 DEBUG Loaded Device : 192.168.253.5
+2026-05-09 17:39:35 DEBUG Loaded Device : 192.168.253.6
+2026-05-09 17:39:35 DEBUG Loaded Device : 192.168.253.7
+2026-05-09 17:39:35 INFO Total device loaded : 3
+2026-05-09 17:39:35 INFO Processing device : {'device_type': 'cisco_ios', 'host': '192.168.253.5', 'username': 'admin', 'password': 'admin', 'secret': 'admin'}
+2026-05-09 17:39:35 INFO Opening SSH connection to 192.168.253.5
+2026-05-09 17:39:36 INFO SSH conncted successfully : 192.168.253.5
+2026-05-09 17:39:36 DEBUG Prompt : R1#
+2026-05-09 17:39:36 DEBUG Sending command : 'show version'
+2026-05-09 17:39:36 INFO command ' show version ' : executed successfully
+2026-05-09 17:39:36 DEBUG Sending command : 'show ip interface brief'
+2026-05-09 17:39:36 INFO command ' show ip interface brief ' : executed successfully
+2026-05-09 17:39:36 DEBUG Sending command : 'show ip route'
+2026-05-09 17:39:36 INFO command ' show ip route ' : executed successfully
+2026-05-09 17:39:36 INFO All commands successfully
+2026-05-09 17:39:36 INFO Processing device : {'device_type': 'cisco_ios', 'host': '192.168.253.6', 'username': 'noor', 'password': 'noor123', 'secret': 'noor123'}
+2026-05-09 17:39:36 INFO Opening SSH connection to 192.168.253.6
+2026-05-09 17:39:38 INFO SSH conncted successfully : 192.168.253.6
+2026-05-09 17:39:38 DEBUG Prompt : R3#
+2026-05-09 17:39:38 DEBUG Sending command : 'show version'
+2026-05-09 17:39:38 INFO command ' show version ' : executed successfully
+2026-05-09 17:39:38 DEBUG Sending command : 'show ip interface brief'
+2026-05-09 17:39:38 INFO command ' show ip interface brief ' : executed successfully
+2026-05-09 17:39:38 DEBUG Sending command : 'show ip route'
+2026-05-09 17:39:38 INFO command ' show ip route ' : executed successfully
+2026-05-09 17:39:38 INFO All commands successfully
+2026-05-09 17:39:38 INFO Processing device : {'device_type': 'cisco_ios', 'host': '192.168.253.7', 'username': 'noor1', 'password': 'noor@123', 'secret': 'noor@123'}
+2026-05-09 17:39:38 INFO Opening SSH connection to 192.168.253.7
+2026-05-09 17:39:48 ERROR Some Error found : TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.253.7:22
+
+
+2026-05-09 17:39:48 INFO Automation finished
+2026-05-09 17:39:48 INFO Total processed devices : 3
+2026-05-09 17:39:48 INFO Successfull Devices : 2
+2026-05-09 17:39:48 INFO successfully connected to : 192.168.253.5
+2026-05-09 17:39:48 INFO successfully connected to : 192.168.253.6
+2026-05-09 17:39:48 INFO Failed to connected to : 192.168.253.7
+2026-05-09 17:39:48 INFO logger file saved to : logs/full_logging_2026-05-09.log

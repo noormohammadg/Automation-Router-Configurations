@@ -1,4 +1,4 @@
-host,device_type,username,password,secret
-192.168.253.5,cisco_ios,admin,admin,admin
-192.168.253.6,cisco_ios,noor,noor123,noor123
-192.168.253.7,cisco_ios,noor1,noor@123,noor@123
+device_type,host,username,password,secret
+cisco_ios,192.168.253.5,admin,admin,admin
+cisco_ios,192.168.253.6,noor,noor123,noor123
+cisco_ios,192.168.253.7,noor1,noor@123,noor@123
